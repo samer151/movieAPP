@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/emailField"
+        android:hint="Email"
+        android:textColor="#fff"
+        android:textColorHint="#777"
+        android:background="#272727"
+        android:padding="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#777"
+        android:background="#272727"
+        android:padding="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:background="#E50914"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/goRegister"
+        android:text="Create an account"
+        android:textColor="#1e90ff"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "119934201694",
+    "project_id": "moviewitcherapp",
+    "storage_bucket": "moviewitcherapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119934201694:android:de47f36e5a61b0167a29cf",
+        "android_client_info": {
+          "package_name": "com.example.movie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLH9wK4jLgeglK_nme1dFHq5WJJuZDiN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

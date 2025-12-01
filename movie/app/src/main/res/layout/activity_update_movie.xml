@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:background="#333333" />
+
+        <EditText
+            android:id="@+id/nameField"
+            android:hint="Movie Title"
+            android:textColor="#fff"
+            android:textColorHint="#777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#272727"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/ratingField"
+            android:hint="Rating"
+            android:textColor="#fff"
+            android:textColorHint="#777"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#272727"
+            android:layout_marginTop="15dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/descField"
+            android:hint="Description"
+            android:textColor="#fff"
+            android:textColorHint="#777"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:background="#272727"
+            android:layout_marginTop="15dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:background="#E50914"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+</ScrollView>

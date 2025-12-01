@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#458DC8"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Txt_titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Secret"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/Txt_nbr_essai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Tentative 1 / 10"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/Edt_nombre_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#858363"
+        android:hint="Entrez 3 chiffres"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="3"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#DDFFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Btn_valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/Txt_resultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Résultat : —"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="12dp" />
+
+</LinearLayout>

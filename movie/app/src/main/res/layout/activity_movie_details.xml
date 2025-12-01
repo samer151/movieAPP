@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detailsPoster"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/detailsTitle"
+            android:text="Movie Title"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/detailsRating"
+            android:text="⭐ 8.5"
+            android:textSize="18sp"
+            android:textColor="#ccc"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/detailsDescription"
+            android:text="Description goes here..."
+            android:textSize="16sp"
+            android:textColor="#ddd"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/editBtn"
+            android:text="Edit Movie"
+            android:background="#1e90ff"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:text="Delete Movie"
+            android:background="#E50914"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

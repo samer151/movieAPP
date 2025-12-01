@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".SignUp">
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/textSignupTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Inscription"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nom & Prénom -->
+    <EditText
+        android:id="@+id/editFullname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nom & Prénom"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/textSignupTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        app:layout_constraintTop_toBottomOf="@id/editFullname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Mot de passe -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        app:layout_constraintTop_toBottomOf="@id/editEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Confirmer mot de passe -->
+    <EditText
+        android:id="@+id/editConfirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirmer le mot de passe"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/editPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Bouton S'inscrire -->
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="S'inscrire"
+        app:layout_constraintTop_toBottomOf="@id/editConfirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
