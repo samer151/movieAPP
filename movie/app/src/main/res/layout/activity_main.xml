@@ -1,23 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#121212">
 
-    <ProgressBar
-        android:id="@+id/loading"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_centerInParent="true"
-        android:visibility="gone" />
+    <!-- APP BAR / NAVIGATION BAR -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1F1B24"
+        android:elevation="8dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1F1B24"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!-- SEARCH BAR -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="4dp">
+
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:tint="#FFFFFF"
+                    android:alpha="0.7" />
+
+                <EditText
+                    android:id="@+id/searchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@id/searchIcon"
+                    android:layout_toStartOf="@id/clearSearch"
+                    android:background="@drawable/search_bar_background"
+                    android:hint="Search movies..."
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B0B0B0"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/clearSearch"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    android:tint="#FFFFFF"
+                    android:alpha="0.5"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
     <!-- TOP SLIDER -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerSlider"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:padding="6dp"
-        android:layout_alignParentTop="true" />
+        android:layout_below="@id/appBarLayout"
+        android:padding="6dp" />
 
     <!-- MOVIE LIST -->
     <androidx.recyclerview.widget.RecyclerView
@@ -27,16 +88,23 @@
         android:layout_below="@id/recyclerSlider"
         android:padding="8dp" />
 
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
     <!-- ADD MOVIE BUTTON -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addMovieBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_input_add"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="20dp"
-        android:tint="#ffffff"
-        android:backgroundTint="#E50914" />
+        android:backgroundTint="#E50914"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#ffffff" />
 
 </RelativeLayout>
